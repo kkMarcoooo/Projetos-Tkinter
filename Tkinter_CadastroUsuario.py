@@ -104,7 +104,7 @@ def pg2():
     tk.Label(frame_1, text="Página de Cadastro", bg="#222626", fg="white", font=("Arial", 18, "bold")).place(relx=0.5, rely=0.05, anchor="center")
     tk.Label(frame_1, text="Create an account", bg="#222626", fg="white", font=("Arial", 14, "bold")).place(relx=0.185, rely=0.15, anchor="w")
     # Username =======================
-    nome = tk.Label(frame_1, text="Username: ", bg="#222626",fg= "white")
+    nome = tk.Label(frame_1, text="Username", bg="#222626",fg= "white")
     nome.config(font=("Georgia", 10))
     nome.place(relx=0.2, rely=0.26, anchor="w")
 
@@ -113,7 +113,7 @@ def pg2():
     # =======================
 
     # Email =======================
-    email = tk.Label(frame_1, text="Email: ", bg="#222626",fg= "white")
+    email = tk.Label(frame_1, text="Email", bg="#222626",fg= "white")
     email.config(font=("Georgia", 10))
     email.place(relx=0.2, rely=0.39, anchor="w")
     entrada_email = tk.Entry(frame_1, highlightbackground="black", highlightthickness=2, font=("Arial", 14))
@@ -121,7 +121,7 @@ def pg2():
     # =======================
 
     # Senha =======================
-    Password = tk.Label(frame_1, text="Password: ", bg="#222626",fg= "white")
+    Password = tk.Label(frame_1, text="Password", bg="#222626",fg= "white")
     Password.config(font=("Georgia", 10))
     Password.place(relx=0.2, rely=0.52, anchor="w")
     entrada_senha = tk.Entry(frame_1, highlightbackground="black", highlightthickness=2, show="*", font=("Arial", 14))
@@ -129,7 +129,7 @@ def pg2():
     # =======================
 
     # Confirmação Senha =======================
-    Password_conf = tk.Label(frame_1, text="Password Confirm: ", bg="#222626",fg= "white")
+    Password_conf = tk.Label(frame_1, text="Password Confirm", bg="#222626",fg= "white")
     Password_conf.config(font=("Georgia", 10))
     Password_conf.place(relx=0.2, rely=0.65, anchor="w")
     entrada_conf_senha = tk.Entry(frame_1, highlightbackground="black", highlightthickness=2, show="*", font=("Arial", 14))
@@ -146,7 +146,7 @@ def pg1():
     for elemento in janela.winfo_children():
         elemento.destroy()
     janela.config(bg="#121414")
-    tk.Label(janela, text="Sistema de Login radical",fg="white", bg="#121414", font=("Trebuchet MS", 24, "bold")).place(relx=0.5,rely=0.05,anchor="center")
+    tk.Label(janela, text="~Sistema de Login radical~",fg="white", bg="#121414", font=("Trebuchet MS", 24, "bold underline")).place(relx=0.5,rely=0.1,anchor="center")
     tk.Button(janela,text="LOGIN", command=pg3).place(relx=0.5,rely=0.40, anchor="center", relwidth=0.2,relheight=0.1)
     tk.Button(janela,text="CADASTRO", command=pg2).place(relx=0.5, rely=0.55, anchor="center", relwidth=0.2,relheight=0.1)
 pg1()
